@@ -1,31 +1,40 @@
 {
-  "name" : "Sys::Lastlog",
-  "support" : {
-    "source"     : "git://github.com/jonathanstowe/p6-Sys-Lastlog.git",
-    "irc"        : "irc://irc.freenode.net/#perl6",
-    "bugtracker" : "https://github.com/jonathanstowe/p6-Sys-Lastlog/issues"
+  "name": "Sys::Lastlog",
+  "support": {
+    "irc": "irc://irc.freenode.net/#perl6",
+    "source": "https://github.com/samcv/p6-Sys-Lastlog",
+    "bugtracker": "https://github.com/samcv/p6-Sys-Lastlog/issues"
   },
-  "source-url" : "git://github.com/jonathanstowe/p6-Sys-Lastlog.git",
-  "authors" : [ "Jonathan Stowe <jns+git@gellyfish.com>" ],
-  "author" : "Jonathan Stowe <jns+git@gellyfish.com>",
-  "perl" : "6",
-  "build-depends" : [
+  "source-url": "git://github.com/samcv/p6-Sys-Lastlog.git",
+  "perl": "6",
+  "author": "Jonathan Stowe <jns+git@gellyfish.com>",
+  "build-depends": [
     "LibraryMake",
     "Shell::Command"
   ],
-  "provides" : {
-    "Sys::Lastlog" : "lib/Sys/Lastlog.pm"
-  },
-  "resources" : [ "libraries/lastloghelper" ],
-  "depends" : [
+  "resources": [
+    "libraries/lastloghelper"
+  ],
+  "auth": "github:samcv",
+  "depends": [
     "LibraryMake",
     "System::Passwd"
   ],
-  "test-depends" : [
+  "license": "Artistic-2.0",
+  "provides": {
+    "Sys::Lastlog": "lib/Sys/Lastlog.pm"
+  },
+  "test-depends": [
     "Test"
   ],
-  "description" : "Perl 6 access to Lastlog information on Unix-like systems",
-  "version" : "0.0.8",
-  "tags" : [ "unix", "audit", "lastlog" ],
-  "auth" : "github:jonathanstowe"
+  "tags": [
+    "unix",
+    "audit",
+    "lastlog"
+  ],
+  "version": "0.0.8",
+  "authors": [
+    "Jonathan Stowe <jns+git@gellyfish.com>"
+  ],
+  "description": "Perl 6 access to Lastlog information on Unix-like systems"
 }
